@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+
+  :root {
+      --broken-white: hsl(270, 25%, 87%);
+      --ocean: hsl(180, 30%, 48%);
+      --light-green: hsl(125, 29%, 77%);
+      --beige: hsl(62, 26%, 80%);
+      --light-violet: hsl(300, 20%, 97%);
+      --black: hsl(0, 0, 0%);
+  }
+
+body {
+    background-color: --light-violet;
+    color: var(--ocean);
+}
+
+hr {
+    width: 70%;
+    color: var(--ocean);
+}
+
+.header {
+    
+}
