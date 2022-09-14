@@ -1,0 +1,140 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: hsl(240, 100%, 20%);
+  --secondary-color: hsl(240, 37%, 40%);
+  --tertiary-color: hsl(240, 25%, 60%);
+  --quaternary-color: hsl(240, 25%, 80%);
+  --broken-white: hsl(300, 20%, 97%);
+  --black: hsl(0, 0, 0%);
+}
+
+body {
+  background-color: var(--broken-white);
+  color: var(--primary-color);
+  letter-spacing: .2rem;
+}
+
+hr {
+  width: 80%;
+  color: var(--primary-color);
+  display: inline-block;
+  text-align: center;
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.header__section--heading {
+  margin: 1rem;
+}
+
+.header__section--heading h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  letter-spacing: .5rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem var(--tertiary-color);
+}
+
+.header__section--heading h3 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+.header__section--menu {
+  margin-bottom: 1rem;
+}
+
+.header__section--menu a {
+  font-size: 1.5rem;
+  margin: .8rem;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 30rem;
+  margin: 1rem;
+}
+
+.post__img {
+  width: 30rem;
+}
+
+.post__date {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.post__title {
+  margin-bottom: .5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-shadow: 0.1rem 0.1rem 0.1rem var(--tertiary-color);
+  line-height: 3rem;
+}
+
+.post__content {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.post__btn {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  border: 0.1rem solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary--color);
+}
+
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */
