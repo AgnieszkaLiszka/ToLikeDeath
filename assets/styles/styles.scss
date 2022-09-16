@@ -56,7 +56,7 @@ hr {
       }
       
       &--menu {
-        margin-bottom: 1rem;
+        margin-bottom: 4rem;
 
         a {
           font-size: 1.5rem;
@@ -77,10 +77,16 @@ hr {
 .post {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  height: fit-content;
+  justify-content: space-between;
+  height: auto;
   width: 30rem;
-  margin: 1rem;
+  margin: 1rem 1rem 5rem 1rem;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 
   &__img {
     width: 30rem;
@@ -109,19 +115,27 @@ hr {
 
   &__btn {
     padding: 1rem;
-    margin-bottom: 2rem;
     align-self: center;
-    
-    width: fit-content;
     text-transform: uppercase;
+    letter-spacing: .2rem;
     border: .1rem solid var(--primary-color);
+    border-radius: .3rem;
     background-color: transparent;
-    color: var(--primary--color);
+    color: var(--primary-color);
+    transition-duration: 0.4s;
+  }
+
+  &__btn:hover {
+    cursor: pointer;
+    color: var(--broken-white);
+    background-color: var(--secondary-color);
   }
 }
 
 .footer {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
