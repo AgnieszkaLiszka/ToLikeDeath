@@ -53,6 +53,7 @@ hr {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .navbar__menu {
@@ -99,8 +100,30 @@ hr {
     text-align: center;
   }
 
+  &__link {
+    position: relative;
+  }
+
   &__img {
+    display: block;
     width: 30rem;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--secondary-color);
+  }
+
+  &__link:hover &__overlay {
+    opacity: 1;
   }
 
   &__date {
@@ -114,6 +137,16 @@ hr {
     text-transform: uppercase;
     text-shadow: .1rem .1rem .1rem var(--tertiary-color);
     line-height: 3rem;
+
+    &--overlay {
+      color: white;
+      text-shadow: .1rem .1rem .1rem white;;
+      font-size: 2.5rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 
   &__content {
@@ -149,4 +182,8 @@ hr {
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-align: center;
+
+  p {
+    padding-top: 1rem;
+  }
 }

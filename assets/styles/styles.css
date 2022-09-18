@@ -54,6 +54,7 @@ hr {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .navbar__menu {
@@ -117,8 +118,31 @@ hr {
   text-align: center;
 }
 
+.post__link {
+  position: relative;
+}
+
 .post__img {
+  display: block;
   width: 30rem;
+}
+
+.post__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: var(--secondary-color);
+}
+
+.post__link:hover .post__overlay {
+  opacity: 1;
 }
 
 .post__date {
@@ -132,6 +156,17 @@ hr {
   text-transform: uppercase;
   text-shadow: 0.1rem 0.1rem 0.1rem var(--tertiary-color);
   line-height: 3rem;
+}
+
+.post__title--overlay {
+  color: white;
+  text-shadow: .1rem .1rem .1rem white;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .post__content {
@@ -169,5 +204,9 @@ hr {
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+.footer p {
+  padding-top: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */
