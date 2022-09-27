@@ -58,25 +58,90 @@ hr {
 }
 
 .navbar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  padding: 1rem;
-  text-align: center;
   background-color: var(--tertiary-color);
 }
 
-.navbar__menu a {
-  margin: 1rem;
-  padding: 1rem;
+.navbar__item {
+  position: relative;
+  padding: 1rem 1.5rem;
+  list-style: none;
   text-decoration: none;
   color: white;
   text-shadow: 0.1rem 0.1rem 0.1rem var(--primary-color);
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
-.navbar__menu a:hover {
+.navbar__item a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar__item:hover {
   background-color: var(--quaternary-color);
   color: var(--primary-color);
+}
+
+.navbar__item:hover a {
+  color: var(--primary-color);
+}
+
+.navbar__item--dropdown {
+  position: relative;
+}
+
+.navbar__item--content {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  width: 20rem;
+  background-color: var(--quaternary-color);
+  padding: .8rem;
+  border-radius: .25rem;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  font-size: 1.5rem;
+  display: none;
+}
+
+.navbar__item--content li {
+  padding: 1rem;
+  list-style: none;
+  text-align: justify;
+  border-bottom: .1rem dashed white;
+}
+
+.navbar__item--content li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.navbar__item--content li:last-child {
+  border-bottom: none;
+}
+
+.navbar__item--dropdown:hover > .navbar__item--content {
+  display: block;
+}
+
+.navbar__item--dropdown:hover > .navbar__item--content a {
+  text-shadow: none;
+}
+
+.navbar__item--dropdown:hover > .navbar__item--content a:hover {
+  color: white;
 }
 
 .main {
@@ -125,6 +190,8 @@ hr {
 .post__img {
   display: block;
   width: 30rem;
+  -webkit-box-shadow: 10px 5px 2px 1px var(--quaternary-color);
+          box-shadow: 10px 5px 2px 1px var(--quaternary-color);
 }
 
 .post__overlay {
@@ -147,7 +214,8 @@ hr {
 
 .post__date {
   font-size: 1.5rem;
-  margin: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .post__title {
