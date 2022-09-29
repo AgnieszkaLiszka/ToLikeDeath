@@ -1,0 +1,12 @@
+body {
+    background-color: var(--broken-white);
+    color: var(--primary-color);
+    letter-spacing: .2rem;
+}
+
+hr {
+    width: 80%;
+    color: var(--primary-color);
+    display: inline-block;
+    text-align: center;
+}

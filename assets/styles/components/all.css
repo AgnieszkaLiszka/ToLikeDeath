@@ -1,0 +1,113 @@
+.post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: auto;
+  width: 30rem;
+  margin: 1rem 1rem 5rem 1rem;
+}
+
+.post__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.post__link {
+  position: relative;
+}
+
+.post__img {
+  display: block;
+  width: 30rem;
+  -webkit-box-shadow: 1rem 1rem 1.5rem 0.5rem var(--quaternary-color);
+          box-shadow: 1rem 1rem 1.5rem 0.5rem var(--quaternary-color);
+}
+
+.post__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: var(--secondary-color);
+}
+
+.post__link:hover .post__overlay {
+  opacity: 1;
+}
+
+.post__date {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.post__title {
+  margin-bottom: .5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-shadow: 0.1rem 0.1rem 0.1rem var(--tertiary-color);
+  line-height: 3rem;
+}
+
+.post__title--overlay {
+  color: white;
+  text-shadow: .1rem .1rem .1rem white;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.post__content {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.post__btn {
+  margin-top: 2rem;
+  padding: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  border: 0.1rem solid var(--primary-color);
+  border-radius: .3rem;
+  background-color: transparent;
+  color: var(--primary-color);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.post__btn:hover {
+  cursor: pointer;
+  color: var(--broken-white);
+  background-color: var(--secondary-color);
+}
+/*# sourceMappingURL=all.css.map */

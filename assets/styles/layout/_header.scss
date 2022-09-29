@@ -1,0 +1,27 @@
+.header {
+    text-align: center;
+  
+    a {
+      text-decoration: none;
+      color: var(--primary-color);
+    }
+  
+    h1 {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      font-size: 5rem;
+      text-transform: uppercase;
+      text-shadow: .2rem .2rem .3rem var(--tertiary-color);
+      letter-spacing: .4rem;
+    }
+  
+    h3 {
+      font-size: 2rem;
+      text-shadow: .1rem .1rem .1rem var(--tertiary-color);
+      padding-bottom: 2rem;
+    }
+  
+    &__img {
+      max-width: 100%;
+    }
+  }
