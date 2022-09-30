@@ -306,7 +306,7 @@ html {
   text-align: center;
   margin-top: 3rem;
   padding: 5rem;
-  line-height: 1.7;
+  line-height: 10rem;
 }
 
 .article__content {
@@ -317,7 +317,7 @@ html {
 .article__content p {
   padding: .8rem 0;
   font-size: 1.7rem;
-  line-height: 1.7;
+  line-height: 4rem;
 }
 
 .article__content p::first-letter {
@@ -327,6 +327,11 @@ html {
 
 .article__content--highlighted {
   font-weight: bold;
+}
+
+.article__content--quote {
+  font-weight: bold;
+  font-style: italic;
 }
 
 body {
