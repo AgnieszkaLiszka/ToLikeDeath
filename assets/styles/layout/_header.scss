@@ -7,18 +7,19 @@
     }
   
     h1 {
-      padding-top: 3rem;
+      padding-top: 4rem;
       padding-bottom: 3rem;
-      font-size: 5rem;
+      font-size: 6rem;
       text-transform: uppercase;
       text-shadow: .2rem .2rem .3rem var(--tertiary-color);
-      letter-spacing: .4rem;
+      letter-spacing: .6rem;
     }
   
     h3 {
       font-size: 2rem;
       text-shadow: .1rem .1rem .1rem var(--tertiary-color);
-      padding-bottom: 2rem;
+      padding-bottom: 4rem;
+      letter-spacing: .2rem;
     }
   
     &__img {
